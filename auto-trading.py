@@ -6,11 +6,8 @@ import pandas as pd
 import larry 
 import math
 
-
-with open("api.txt") as f:
-    lines = f.readlines()
-    api_key = lines[0].strip()
-    secret  = lines[1].strip()
+api_key = ""
+secret = ""
 
 
 binance = ccxt.binance(config={
